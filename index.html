@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to Equizent</title>
+    <link href="fonts.googleapis.com" rel="stylesheet">
+    <style>
+        /* Modern, "techy" aesthetic with black and vibrant green */
+        :root {
+            --primary-color: #00ff41; /* Vibrant 'neon' green */
+            --background-color: #0a0a0a; /* Deep black/near black */
+            --text-color: #e0e0e0; /* Light gray for general text */
+            --accent-glow: 0 0 10px rgba(0, 255, 65, 0.6), 0 0 20px rgba(0, 255, 65, 0.4);
+        }
+
+        body {
+            background-color: var(--background-color);
+            color: var(--text-color);
+            font-family: 'Roboto Mono', monospace; /* Monospaced font feels techy */
+            text-align: center;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            overflow: hidden; /* Keeps any background effects neat */
+        }
+
+        .container {
+            background-color: rgba(15, 15, 15, 0.8); /* Semi-transparent dark background for contrast */
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: var(--accent-glow);
+            border: 1px solid var(--primary-color);
+            max-width: 500px;
+            width: 90%;
+            backdrop-filter: blur(5px); /* Nice effect for modern UIs */
+        }
+
+        h1 {
+            font-family: 'Orbitron', sans-serif; /* Bold, futuristic font for the main title */
+            font-size: 2.5em;
+            color: var(--primary-color);
+            margin-bottom: 30px;
+            text-shadow: var(--accent-glow);
+            letter-spacing: 3px;
+        }
+
+        .nav-links {
+            list-style: none;
+            padding: 0;
+        }
+
+        .nav-links li {
+            margin: 25px 0;
+        }
+
+        .nav-links a {
+            color: var(--primary-color);
+            text-decoration: none;
+            font-size: 1.1em;
+            padding: 15px;
+            border: 1px solid var(--primary-color);
+            border-radius: 5px;
+            display: block;
+            width: 100%;
+            box-sizing: border-box; /* Ensures padding doesn't widen the element past 100% */
+            transition: background-color 0.4s ease, color 0.4s ease, transform 0.2s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .nav-links a:hover {
+            background-color: var(--primary-color);
+            color: var(--background-color);
+            transform: translateY(-3px); /* Subtle lift effect */
+            box-shadow: var(--accent-glow);
+        }
+
+        /* Subtle background animation for a dynamic feel */
+        @keyframes pulse {
+            0% { border-color: rgba(0, 255, 65, 0.4); }
+            50% { border-color: rgba(0, 255, 65, 0.8); }
+            100% { border-color: rgba(0, 255, 65, 0.4); }
+        }
+
+        .container {
+            animation: pulse 4s infinite alternate;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome to Equizent</h1>
+        <ul class="nav-links">
+            <!-- Links are placeholders pointing to hypothetical local files -->
+            <li><a href="business.html">Business Opportunities</a></li>
+            <li><a href="meetup-spots.html">Meet Up Spots</a></li>
+            <li><a href="ocr-roadmapping.html">OCR Based Road Mapping</a></li>
+        </ul>
+    </div>
+</body>
+</html>
